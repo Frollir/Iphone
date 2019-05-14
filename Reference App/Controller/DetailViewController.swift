@@ -10,9 +10,10 @@ import UIKit
 
 class DetailViewController: UITableViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
+//    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var costLabel: UILabel!
     
     var model: ReferenceModel!
     
@@ -22,8 +23,9 @@ class DetailViewController: UITableViewController {
     }
     
     func updateUI() {
-        imageView.image = model.image
+//        imageView.image = model.image
         titleLabel.text = model.title
         detailLabel.text = model.detail
+        costLabel.text = "\(Date())"
     }
 }
